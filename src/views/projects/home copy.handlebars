@@ -1,0 +1,25 @@
+
+
+<div class="home-projects-container">
+    {{#each projects}}
+        <div class="w3-card-4">
+
+            <header class="w3-container w3-light-grey">
+                <h3>{{this.name}}</h3>
+            </header>
+
+            <div class="w3-container">
+                <p>Projeto de Indexação</p>
+                <hr>
+                <img src="img_avatar3.png" alt="Avatar" class="w3-left w3-circle">
+                <p>President/CEO at Mighty Schools...</p>
+                <a href="/indexings/baptisms/{{this.id}}" class="btn">Ver Indexações</a>
+            </div>
+
+            <form action="/projects/addUser/{{this.id}}" method="Post">
+                <button class="w3-button w3-block w3-dark-grey">+ Participar</button>
+            </form>
+
+        </div>
+{{/each}}        
+</div>

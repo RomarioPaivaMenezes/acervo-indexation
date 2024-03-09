@@ -1,0 +1,15 @@
+
+<div class="home-projects-container">
+    {{#each projects}}
+     <div class="item">
+            <h2>{{this.name}}</h2>
+            <p>{{this.occupation}}</p>
+            <div class="actions">
+                <a href="/indexings/baptisms/{{this.id}}" class="btn">Ver Indexações</a>
+                <form action="/projects/addUser/{{this.id}}" method="Post">
+                    <input type="submit" value="Participar", class="btn">
+                </form>
+            </div>
+        </div>
+    {{/each}}
+</div>

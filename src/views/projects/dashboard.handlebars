@@ -1,0 +1,24 @@
+<div class="dashboard">
+    <div class="title-container">
+        <h2>Dashboard</h2>
+        <a href="/projects/add" class="btn">Criar Projeto</a>
+    </div>
+    <h3>Seus Projetos</h3>
+    <ul>
+    {{#each  userProjects}}
+        <li>
+            <span class="label">{{this.name}}</span>
+            <span class="actions">
+                <a href="/" class="btn">Editar</a>
+                <form action="/projects/remove" method="post">
+                    <input type="hidden" name="id" value="{{this.id}}">
+                    <input type="submit" value="Excluir" class="btn">
+                </form>
+            </span>
+        </li>
+    {{/each}}
+    </ul>
+    {{#if empytProjects}}
+        <p>Você ainda não possui projetos.</p>
+    {{/if}}
+</div>

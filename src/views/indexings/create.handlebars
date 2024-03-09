@@ -1,0 +1,42 @@
+<div class="projects-form-container">
+    <a href="/indexings/dashboard">Voltar</a>
+
+    <h1>Adicionar Indexação:</h1>
+
+    <form action="/indexings/add/project" method="post">
+
+        <input type="hidden" name="projectId" value={{projectId}}>
+        <div class="form-control">
+            <label for="birthDate">Data de Nascimento:</label>
+            <input type="text" name="birthDate" placeholder="Digite a data de nascimento" required>
+        </div>
+
+        <div class="form-control">
+            <label for="name">Nome:</label>
+            <input type="text" name="name" placeholder="Digite o nome da criança" required>
+        </div>
+
+        <div class="form-control">
+            <label for="father">Nome do Pai:</label>
+            <input type="text" name="father" placeholder="Digite o nome do Pai" required>
+        </div>
+
+        <div class="form-control">
+            <label for="mother">Nome da Mãe:</label>
+            <input type="text" name="mother" placeholder="Digite o nome da Mãe" required>
+        </div>
+
+        <div class="form-control">
+            <label for="godparents">Nome dos Padrinhos:</label>
+            <input type="text" name="godparents" placeholder="Digite os nomes dos Padrinhos" required>
+        </div>
+
+        <div class="form-control">
+            <label for="observacao">Nome do Projeto:</label>
+            <input type="text" name="observacao" placeholder="Digite uma observação se houver" required>
+        </div>
+
+    <input type="submit" value="Adiciona Index">
+    </form>
+
+</div>
